@@ -6,26 +6,9 @@ const Wrapper  = styled.div`
  
 `
 
-const Board = () => {
+const Board = ({board,handleSquare}) => {
 
-    const [board, setBoard] = useState(Array(9).fill(null))
-    const [isX, setIsX] = useState(false)
-    
   
-    const handleSquare = (position) => {
-        if(board[position]){
-            return
-        }
-        setBoard((preVal)=> {
-           return preVal.map((square, idx)=> {
-                if(idx === position){
-                    return isX ? 'O' : 'X'
-                }
-                return square
-            })
-        } )
-        setIsX((preVal) => !preVal)
-    }
 
     const renderSqaures = (position) => {
         return (
