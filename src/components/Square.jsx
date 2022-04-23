@@ -1,9 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const Square = ({value}) => {
+const Button = styled.button`
+    padding: 10px;
+`
+
+const Square = ({value, onClick}) => {
   return (
     <>
-    <button>{value}</button>
+    <Button onClick={onClick}>{value}</Button>
     </>
   )
 }
