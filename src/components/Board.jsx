@@ -12,7 +12,7 @@ const Board = ({board,handleSquare}) => {
 
     const renderSqaures = (position) => {
         return (
-            <Square onClick={() => handleSquare(position)} value={board[position]}/>  
+            <Square eventClick={() => handleSquare(position)} value={board[position]}/>  
         )
     }
 

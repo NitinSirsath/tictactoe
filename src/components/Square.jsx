@@ -5,10 +5,10 @@ const Button = styled.button`
     padding: 10px;
 `
 
-const Square = ({value, onClick}) => {
+const Square = ({value, eventClick}) => {
   return (
     <>
-    <Button onClick={onClick}>{value}</Button>
+    <Button onClick={eventClick}>{value}</Button>
     </>
   )
 }

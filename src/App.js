@@ -26,8 +26,6 @@ const App = () => {
       <h1>TIC TAC TOE</h1>
       <Board
       board={board} 
-      isX={isX}
-      setIsX={setIsX}
       handleSquare={handleSquare}
       />
       
